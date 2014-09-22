@@ -45,7 +45,53 @@
 			<li class="arrow"><a id ="5" href="#date">5 Days Ago</a></li>
 		</ul>
 	</div>
+	<div class="toolbar">
+		<h1>Date</h1>
+		<a class="button back" href="#">Back</a>
+		<a class="button slideup" href="#createEntry">+</a>
+	</div>
+	<ul class="edgetoedge">
+		<li id="entryTemplate" class="entry" style="display:none">
+			<span class="label">Label</span>
+			<span class="calories">000</span>
+			<span class="delete">Delete</span>
+		</li>
+	</ul>
+	</div>
+	<div id="createEntry">
+		<div class="toolbar">
+			<h1>New Entry</h1>
+			<a class="button cancel" href="#">Cancel</a>
+		</div>
+		<form method="post">
+			<ul class="rounded">
+				<li><input type="text" placeholder="Food" name="food" id="food"
+					autocapitalize="off" autocorrect="off" autocomplete="off" /> </li>
+				<li><input type="text" placeholder="Calories" name="calories"
+					id="calories" autocapitalize="off" autocorrect="off"
+					autocomplete="off" /> </li>
+				<li><input type="submit" class="submit" name="action"
+					value="Save Entry" /></li>
+			</ul>
+		</form>
+		</div>
+		<div id="settings">
+			<div class="toolbar">
+				<h1>Settings</h1>
+				<a class="button cancel" href="#">Cancel</a>
+			</div>
+			<form method="post">
+				<ul class="rounded">
+					<li><input placeholder="Age" type="text" name="Age" id="age" /> </li>
+					<li><input placeholder="weight" type="text" name="Weight"
+						id="weight" /></li>
+					<li><input placeolders="Budget" type="text" name="budget"
+						id="budget" /> </li>
+					<li><input type="submit" class="submit" name="action"
+						value="Save Changes" /></li>
+				
+				</ul>
+			</form>
+		</div>
 	</body>
-	
-	
 </html>
